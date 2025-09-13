@@ -74,4 +74,4 @@ $ igotifier -path="/config/app.yaml" -exec="app-reloader sighup --name=myapp"
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) for details.
+This project is licensed under the [MIT License](./LICENSE).
