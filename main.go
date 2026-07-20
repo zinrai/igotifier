@@ -16,9 +16,12 @@ import (
 	"github.com/fsnotify/fsnotify"
 )
 
-const (
-	version       = "0.1.0"
-	debounceDelay = 100 * time.Millisecond
+const debounceDelay = 100 * time.Millisecond
+
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
 )
 
 type config struct {
@@ -57,7 +60,7 @@ func parseFlags() *config {
 	flag.Parse()
 
 	if *ver {
-		fmt.Printf("igotifier version %s\n", version)
+		fmt.Printf("igotifier version %s (commit %s, built %s)\n", version, commit, date)
 		os.Exit(0)
 	}
 
