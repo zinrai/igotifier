@@ -11,12 +11,6 @@ A lightweight file watcher that executes commands on file changes. Built with Go
 - Verbose mode for debugging
 - Clean shutdown on SIGINT/SIGTERM
 
-## Installation
-
-```bash
-$ go install github.com/zinrai/igotifier@latest
-```
-
 ## Usage
 
 Basic usage:
